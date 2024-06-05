@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit/static/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray-color: hsl(212, 45%, 89%);
+  --grayish-blue-color: hsl(220, 15%, 55%);
+  --dark-blue-color: hsl(218, 44%, 22%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray-color);
+  font-family: "Outfit", serif, sans-serif, monospace, cursive, fantasy;
+  font-size: 15px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.card {
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 15px;
+  width: 320px;
+  height: 497px;
+}
+
+.card__image {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.card__title {
+  color: var(--dark-blue-color);
+  padding: 0 20px;
+}
+
+.card__text {
+  color: var(--grayish-blue-color);
+  padding: 0 30px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution__link {
+  color: var(--grayish-blue-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 320px) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+    padding: 5px;
+  }
+}
